@@ -1,0 +1,2 @@
+class JtCartItem < ApplicationRecord
+end

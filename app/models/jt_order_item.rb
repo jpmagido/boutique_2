@@ -1,0 +1,2 @@
+class JtOrderItem < ApplicationRecord
+end
