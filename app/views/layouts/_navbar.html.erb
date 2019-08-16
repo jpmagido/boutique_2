@@ -13,16 +13,17 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <a href="index.html" class="js-logo-clone">ShopMax</a> <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+              <a href="index.html" class="js-logo-clone">ShopMax</a>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li class="has-children active">
-                  <a href="index.html">Home</a>
+                	<%= link_to "Home", root_path %>
+                  
                   <ul class="dropdown">
-                    <li><a href="#">Menu One</a></li>
+                    <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
                     <li><a href="#">Menu Two</a></li>
                     <li><a href="#">Menu Three</a></li>
                     <li class="has-children">
@@ -36,10 +37,10 @@
                   </ul>
                 </li>
                 
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="#">Catalogue</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><%= link_to "Shop", static_pages_shop_path %></li>
+                <li><%= link_to "Catalogue", static_pages_shop_single_path %></li>
+                <li><%= link_to "New Arrivals", static_pages_shop_path %></li>
+                <li><%= link_to "Contact", static_pages_contact_path %></li>
               </ul>
             </nav>
           </div>
