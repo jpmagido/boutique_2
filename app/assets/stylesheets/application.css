@@ -30,3 +30,39 @@
 	background-size: cover; 
 	background-position: center;
 }
+
+/* FORMS */
+
+#div-sign-up{
+	border-width: 1px;
+	border-style: solid;
+	padding: 20px;
+	width: 350px;
+	height: 530px;
+	margin: auto;
+}
+
+#div-sign-in{
+	border-width: 1px;
+	border-style: solid;
+	padding: 20px;
+	width: 350px;
+	height: 470px;
+	margin: auto;
+}
+
+#logo-1{
+	display: flex;
+	justify-content: center;
+
+}
+
+/* FORMS */
+
+
+
+
+
+
+
+

@@ -1,14 +1,17 @@
-<h2>Log in</h2>
-
+<div id="div-sign-in">
+<h2 id="logo-1">Log in</h2>
+<br>
+<i id="logo-1" class="fas fa-grin-stars fa-3x"></i>
+<br>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "form-control" %>
   </div>
 
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.password_field :password, autocomplete: "current-password", :class => "form-control" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
@@ -18,9 +21,12 @@
     </div>
   <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+  <div class="actions" id="logo-1">
+    <%= f.submit "Log in",:class => "btn btn-success" %>
   </div>
 <% end %>
-
+<br>
 <%= render "devise/shared/links" %>
+</div>
+
+
