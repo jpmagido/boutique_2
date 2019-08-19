@@ -13,6 +13,8 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.12.9'
 gem 'owlcarousel-rails'
+gem 'sassc', '~> 2.0.1'
+gem 'ejs', '~> 1.1.1'  
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'

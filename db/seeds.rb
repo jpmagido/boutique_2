@@ -19,9 +19,7 @@ def item_creation
 end
 
 def user_creation
-
-	User.create(email: "jpmagido@me.com", password: "blablabla")
-	
+	User.create(email: "jpmagido@me.com", password: "blablabla")	
 end
 
 def perform
