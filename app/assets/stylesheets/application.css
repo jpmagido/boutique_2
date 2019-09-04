@@ -19,7 +19,10 @@
  *= require assets/stylesheets/aos.css 
  */
 
-
+#div-img-bg {
+	
+	margin: auto;
+}
 
 #item-carousel {
 
