@@ -19,11 +19,7 @@
  *= require assets/stylesheets/aos.css 
  */
 
-#div-img-bg {
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	background-position: center;
-}
+
 
 #item-carousel {
 
