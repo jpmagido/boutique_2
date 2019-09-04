@@ -20,7 +20,7 @@
 //= require assets/js/bootstrap.min.js
 //= require assets/js/jquery.magnific-popup.min.js
 //= require assets/js/aos.js
-//= require js/jquery.min.js
+
 
 
 
