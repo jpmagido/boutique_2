@@ -6,15 +6,13 @@ ruby '2.5.1'
 gem 'table_print', '~> 1.5.6'
 gem 'faker', '>= 1.9.1', '< 2.1.0'
 gem 'better_errors', '~> 2.5.1'
-gem 'devise', '~> 4.5.0'
-gem 'bootstrap-sass'
+gem 'devise', '~> 4.6.0'
+
 gem 'font-awesome-rails'
 
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.12.9'
-gem 'owlcarousel-rails'
-gem 'sassc', '~> 2.0.1'
-gem 'ejs', '~> 1.1.1'  
+ 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'

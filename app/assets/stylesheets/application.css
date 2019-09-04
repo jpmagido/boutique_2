@@ -12,16 +12,11 @@
  *
  *= require_tree .
  *= require_self
- 
-*= require icomoon/style.css
-*= require assets/stylesheets/bootstrap.min.css
-*= require assets/stylesheets/magnific-popup.css
-*= require assets/stylesheets/jquery-ui.css
-*= require assets/stylesheets/owl.carousel.min.css
-*= require assets/stylesheets/owl.theme.default.min.css
-*= require assets/stylesheets/aos.css
-
- 
+ *= require icomoon/style.css
+ *= require assets/stylesheets/bootstrap.min.css
+ *= require assets/stylesheets/magnific-popup.css
+ *= require assets/stylesheets/jquery-ui.css
+ *= require assets/stylesheets/aos.css 
  */
 
 #div-img-bg {
@@ -31,40 +26,16 @@
 	background-position: center;
 }
 
-/* FORMS */
+#item-carousel {
 
-#div-sign-up{
-	border-width: 1px;
-	border-style: solid;
-	padding: 20px;
-	width: 350px;
-	height: 530px;
+	height: 10%;
+	width: 10%;
+}
+
+#carouselExampleCaptions {
+	width: 40%;
 	margin: auto;
-	margin-bottom: 50px;
 }
-
-#div-sign-in{
-	border-width: 1px;
-	border-style: solid;
-	padding: 20px;
-	width: 350px;
-	height: 470px;
-	margin: auto;
-	margin-bottom: 50px;
-}
-
-#logo-1{
-	display: flex;
-	justify-content: center;
-
-}
-
-/* FORMS */
-
-
-
-
-
 
 
 
