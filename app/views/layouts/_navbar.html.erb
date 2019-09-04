@@ -51,6 +51,7 @@
             </div>
             <div class="dropdown-menu">
               <% if user_signed_in? %>
+                <a class="dropdown-item" href="#"><%= current_user.email%></a>
                 <a class="dropdown-item" href="#">Mon Profil</a>
                 <%= link_to "Me déconnecter", destroy_user_session_path, method: :delete, :class => "dropdown-item" %>
                 <div class="dropdown-divider"></div>
@@ -72,6 +73,8 @@
                   
                   <% if user_signed_in? %>
                   <ul class="dropdown">
+                    <li><a href="#"><%= current_user.email%></a></li>
+                    <div class="dropdown-divider"></div>
                     <li><a href="#">Mon Profil</a></li>
                     <li><%= link_to "Me déconnecter", destroy_user_session_path, method: :delete %></li>
                     <li><a href="#">Menu Three</a></li>
