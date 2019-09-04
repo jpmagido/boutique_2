@@ -6,12 +6,8 @@ ruby '2.5.1'
 gem 'table_print', '~> 1.5.6'
 gem 'faker', '>= 1.9.1', '< 2.1.0'
 gem 'better_errors', '~> 2.5.1'
-gem 'devise', '~> 4.6.0'
+gem 'devise', '~> 4.5.0'
 
-
-gem 'jquery-rails'
-gem 'popper_js', '~> 1.12.9'
- 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
