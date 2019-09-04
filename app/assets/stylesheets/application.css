@@ -20,7 +20,7 @@
  */
 
 #div-img-bg {
-	background-image: url('hero_2.jpg'); 
+	background-image: url("hero_2.jpg"); 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center;
