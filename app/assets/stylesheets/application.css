@@ -35,5 +35,12 @@
 	margin: auto;
 }
 
+#icons-div {
+	display: flex;
+	justify-content: space-between;
+}
 
+#icon-sub-div {
+	margin: 0 5px 0 5px;
+}
 
