@@ -6,9 +6,8 @@ ruby '2.5.1'
 gem 'table_print', '~> 1.5.6'
 gem 'faker', '>= 1.9.1', '< 2.1.0'
 gem 'better_errors', '~> 2.5.1'
-gem 'devise'
+gem 'devise', '~> 4.6.0'
 
-gem 'font-awesome-rails'
 
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.12.9'
