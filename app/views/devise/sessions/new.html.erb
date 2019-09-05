@@ -1,8 +1,12 @@
 <div id="div-sign-in">
-<h2 id="logo-1">Log in</h2>
+  <div id="div-inside-sign-in">
+    
+  
+<h2 >Log in</h2>
 <br>
 <i id="logo-1" class="fas fa-grin-stars fa-3x"></i>
-<br>
+<br><hr><br>
+</div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -27,6 +31,7 @@
 <% end %>
 <br>
 <%= render "devise/shared/links" %>
+</div>
 </div>
 
 

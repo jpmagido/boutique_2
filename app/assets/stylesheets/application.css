@@ -35,6 +35,8 @@
 	margin: auto;
 }
 
+/* Icon NavBAr */
+
 #icons-div {
 	display: flex;
 	justify-content: space-between;
@@ -43,4 +45,52 @@
 #icon-sub-div {
 	margin: 0 5px 0 5px;
 }
+/* Icon NavBAr */
+
+/* FORMS */
+
+#div-sign-in{
+	margin: auto;
+	border-width: 1px;
+	border-radius: 5px;
+	border-style: solid;
+	padding: 20px;
+	width: 350px;
+	height: 550px;
+}
+
+#div-inside-sign-in {
+	text-align: center;
+}
+
+#logo-1 {
+	margin-bottom: 30px;
+}
+
+#div-sign-up{
+	margin: auto;
+	border-width: 1px;
+	border-radius: 5px;
+	border-style: solid;
+	padding: 20px;
+	width: 350px;
+	height: 580px;
+}
+
+#div-inside-sign-up {
+	text-align: center;
+}
+
+#div-pwd-reset {
+	margin: auto;
+	border-width: 1px;
+	border-radius: 5px;
+	border-style: solid;
+	padding: 20px;
+	width: 350px;
+	height: 310px;
+}
+
+/* FORMS */
+
 
