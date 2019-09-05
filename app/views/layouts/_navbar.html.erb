@@ -38,9 +38,9 @@
                   </ul>
                 </li>
                 
-                <li><%= link_to "Shop", static_pages_shop_path %></li>
-                <li><%= link_to "Catalogue", static_pages_shop_single_path %></li>
-                <li><%= link_to "New Arrivals", static_pages_shop_path %></li>
+                <li><%= link_to "Shop", items_index_path %></li>
+                <li><%= link_to "Catalogue", items_path(Item.last) %></li>
+                <li><%= link_to "New Arrivals", items_index_path %></li>
                 <li><%= link_to "Contact", static_pages_contact_path %></li>
               </ul>
             </nav>
