@@ -7,9 +7,9 @@
         <div class="row">
           <div class="col-md-6 ml-auto order-md-2 align-self-start">
             <div class="site-block-cover-content">
-            <h2 class="sub-title">#New Summer Collection 2019</h2>
-            <h1>Arrivals Sales</h1>
-            <p><a href="#" class="btn btn-black rounded-0">Shop Now</a></p>
+            <h2 class="sub-title">#Nouvelle Collection Eté 2019</h2>
+            <h1>Nouvelles Ventes</h1>
+            <p><a href="#" class="btn btn-black rounded-0">J'en profite !</a></p>
             </div>
           </div>
           <div class="col-md-6 order-1 align-self-start">
@@ -67,7 +67,7 @@
 					<div class="col-lg-6 col-md-6 item-entry mb-4">
 	                <a href=<%= items_path(item.id)%>, class="product-item md-height bg-gray d-block">
 	                
-	                	<%= image_tag ('prod_2.png'), :alt => "Image", :class => "img-fluid" %>
+	                	<%= image_tag ("#{item.image_url}.jpg"), :alt => "Image", :class => "img-fluid" %>
 	                </a>
 	                <h2 class="item-title"><a href="#"><%= item.name %></a></h2>
 	                <strong class="item-price"><%= item.price %>€</strong>
