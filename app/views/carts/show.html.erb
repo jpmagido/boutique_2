@@ -15,6 +15,9 @@
           <form class="col-md-12" method="post">
             <div class="site-blocks-table">
               <table class="table table-bordered">
+              	<% if @array_length = 0 %>
+                	 <div>Votre panier est vide </div>
+               <% else %>
                 <thead>
                   <tr>
                     <th class="product-thumbnail">Image</th>
@@ -25,6 +28,8 @@
                     <th class="product-remove">Remove</th>
                   </tr>
                 </thead>
+
+                
                 <tbody>
                   <tr>
                   	<% while @array_length >= 0 %>
@@ -54,7 +59,7 @@
                   </tr>
                   	 <% @array_length -= 1 %>
 					<% end %>
-					
+					<% end %>
                   <tr>
                 </tbody>
               </table>
