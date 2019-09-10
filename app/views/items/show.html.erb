@@ -36,8 +36,12 @@
             </div>
 
             </div>
-            <p><a href="cart.html" class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Ajouter au panier</a></p>
-
+            <% if user_signed_in? %>
+              <p><a href=<%= carts_path(Cart.find_by(user_id: current_user.id).id)%>, class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Ajouter au panier</a></p>
+              <input type="hidden" id="user_id" name="user_id" size="1" value="<%= JtCartItem.create(cart_id: Cart.find_by(user_id: current_user.id).id, item_id: params[:format]) %>" />
+          <% else %>
+              <p><a href=<%= new_user_session_path %>, class="buy-now btn btn-sm height-auto px-4 py-3 btn-primary">Me connecter pour Acheter</a></p>
+          <% end %>
           </div>
         </div>
       </div>
