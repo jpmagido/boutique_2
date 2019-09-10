@@ -17,5 +17,16 @@ class ItemsController < ApplicationController
   	puts "$"* 100
   	puts params
   	puts "$"* 100
+
+
+  end
+
+  private
+
+  def current_item
+
+    @item_select = session[:current_item]
+
+    
   end
 end
