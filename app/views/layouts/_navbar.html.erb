@@ -93,8 +93,11 @@
           <div class="icons-div">     
             <a href="#"><i class="fas fa-search" id="icon-sub-div"></i></a>
             <a href="#"><i class="far fa-heart" id="icon-sub-div"></i></a>
-            
-            <a href="<%= static_pages_cart_path %>">
+            <% if user_signed_in? %>
+            <a href=<%= carts_path(Cart.find_by(user_id: current_user.id).id) %>>
+              <% else %>
+            <a href=<%= new_user_session_path %>>
+              <% end %>
               <i class="fas fa-cart-arrow-down " id="icon-sub-div"></i>
             </a>
             <a href="#" class="site-menu-toggle js-menu-toggle ml-3 d-inline-block d-lg-none"><span class="icon-menu"></span></a>

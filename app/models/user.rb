@@ -6,4 +6,10 @@ class User < ApplicationRecord
 
    has_many :orders
    has_many :carts
+
+   after_create :cart_creation
+
+   def cart_creation
+   		Cart.create(user_id: User.last.id)
+   end
 end
