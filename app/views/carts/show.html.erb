@@ -21,11 +21,11 @@
                 <thead>
                   <tr>
                     <th class="product-thumbnail">Image</th>
-                    <th class="product-name">Product</th>
-                    <th class="product-price">Price</th>
-                    <th class="product-quantity">Quantity</th>
+                    <th class="product-name">Produit</th>
+                    <th class="product-price">Prix</th>
+                    <th class="product-quantity">Quantité</th>
                     <th class="product-total">Total</th>
-                    <th class="product-remove">Remove</th>
+                    <th class="product-remove">Supprimer</th>
                   </tr>
                 </thead>
 
@@ -57,7 +57,7 @@
                     <td><%= Item.find(@jt_item_id[@array_length][:item_id]).price %>€</td>
 
                     <td> 
-                    	<%= link_to "X", jt_cart_items_path(params[:format]), method: :delete, :class => "btn btn-primary height-auto btn-sm"%>
+                    	<%= link_to "X", jt_cart_items_path(Item.find(@jt_item_id[@array_length][:item_id]).id), method: :delete, :class => "btn btn-primary height-auto btn-sm"%>
                   </tr>
                   	 <% @array_length -= 1 %>
 					<% end %>
@@ -97,7 +97,7 @@
               <div class="col-md-7">
                 <div class="row">
                   <div class="col-md-12 text-right border-bottom mb-5">
-                    <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                    <h3 class="text-black h4 text-uppercase">Panier Total</h3>
                   </div>
                 </div>
                 <div class="row mb-3">
@@ -105,7 +105,7 @@
                     <span class="text-black">Sous-total</span>
                   </div>
                   <div class="col-md-6 text-right">
-                    <strong class="text-black"><%= total_price %>€</strong>
+                    <strong class="text-black"><%= total_price %> €</strong>
                   </div>
                 </div>
                 <div class="row mb-5">
@@ -113,7 +113,7 @@
                     <span class="text-black">Total TTC</span>
                   </div>
                   <div class="col-md-6 text-right">
-                    <strong class="text-black"><%= total_price_ttc %>€</strong>
+                    <strong class="text-black"><%= total_price_ttc %> €</strong>
                   </div>
                 </div>
 
