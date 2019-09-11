@@ -8,8 +8,8 @@ gem 'faker', '>= 1.9.1', '< 2.1.0'
 gem 'better_errors', '~> 2.5.1'
 gem 'devise', '~> 4.5.0'
 gem 'stripe', '~> 5.1.1'
-gem 'dotenv', '~> 2.7.5'
-gem 'dotenv-rails', '~> 2.7.5' , groups: [:development, :test]
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -48,6 +48,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails', '~> 2.7.5'
 end
 
 group :development do
