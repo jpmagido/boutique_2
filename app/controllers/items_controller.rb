@@ -1,9 +1,7 @@
 class ItemsController < ApplicationController
   def index
 
-  	@item_one_price = Item.first.price
-  	@item_one_name = Item.first.name
-  	@item_one_description = Item.first.description
+  
   	@items = Item.all
 
   end
@@ -21,12 +19,4 @@ class ItemsController < ApplicationController
 
   end
 
-  private
-
-  def current_item
-
-    @item_select = session[:current_item]
-
-    
-  end
 end
