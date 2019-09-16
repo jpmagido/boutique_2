@@ -13,7 +13,7 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <div class="site-logo">
-              <%= link_to "Antonius", root_path, :class =>"js-logo-clone" %>
+              <%= link_to "SHOP", root_path, :class =>"js-logo-clone" %>
             </div>
           </div>
           <div class="main-nav d-none d-lg-block">
@@ -38,8 +38,8 @@
                   </ul>
                 </li>
                 
-                <li><%= link_to "Boutique", items_index_path %></li>
-                <li><%= link_to "Nouvelle Collection", items_path(Item.last) %></li>
+                <li><%= link_to "Boutique", items_path %></li>
+                <li><%= link_to "Nouvelle Collection", item_path(Item.last) %></li>
                 <li><%= link_to "Contact", static_pages_contact_path %></li>
               </ul>
             </nav>
@@ -94,7 +94,7 @@
             <a href="#"><i class="fas fa-search" id="icon-sub-div"></i></a>
             <a href="#"><i class="far fa-heart" id="icon-sub-div"></i></a>
             <% if user_signed_in? %>
-            <a href=<%= carts_path(Cart.find_by(user_id: current_user.id).id) %>>
+            <a href=<%= cart_path(Cart.find_by(user_id: current_user.id).id) %>>
               <% else %>
             <a href=<%= new_user_session_path %>>
               <% end %>
