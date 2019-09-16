@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'items/index'
   get 'carts/index'
+  
   devise_for :users
   get 'static_pages/index'
   get 'static_pages/secret'
@@ -13,10 +14,7 @@ Rails.application.routes.draw do
   get 'static_pages/thank_you'
   root 'static_pages#home'
 
-  resource :items
-  resource :carts
-  resource :jt_cart_items
-  resources :charges
-  
+  resources :items, :carts, :jt_cart_items, :charges, :orders
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
