@@ -8,10 +8,10 @@ class ItemsController < ApplicationController
 
   def show
 
-  	@item_name = Item.find(params[:format]).name
-  	@item_price = Item.find(params[:format]).price
-  	@item_description = Item.find(params[:format]).description
-  	@item_select = Item.find(params[:format])
+  	@item_name = Item.find(params[:id]).name
+  	@item_price = Item.find(params[:id]).price
+  	@item_description = Item.find(params[:id]).description
+  	@item_select = Item.find(params[:id])
   	puts "$"* 100
   	puts params
   	puts "$"* 100

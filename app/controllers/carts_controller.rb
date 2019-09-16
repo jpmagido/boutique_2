@@ -5,7 +5,7 @@ class CartsController < ApplicationController
 	end
 
 	def show
-		@cart_user = Cart.find(params[:format])
+		@cart_user = Cart.find(params[:id])
 
 	  	@jt_id = JtCartItem.where(cart_id: Cart.find_by(user_id: current_user.id)).ids
 	  	@jt_item_id = JtCartItem.find(@jt_id)
