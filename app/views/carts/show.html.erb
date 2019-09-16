@@ -57,7 +57,7 @@
                     <td><%= Item.find(@jt_item_id[@array_length][:item_id]).price %>€</td>
 
                     <td> 
-                    	<%= link_to "X", jt_cart_items_path(Item.find(@jt_item_id[@array_length][:item_id]).id), method: :delete, :class => "btn btn-primary height-auto btn-sm"%>
+                    	<%= link_to "X", jt_cart_item_path(Item.find(@jt_item_id[@array_length][:item_id]).id), method: :delete, :class => "btn btn-primary height-auto btn-sm"%>
                   </tr>
                   	 <% @array_length -= 1 %>
 					<% end %>
