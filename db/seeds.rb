@@ -9,6 +9,7 @@
 def destroy_all
 	Item.destroy_all
 	User.destroy_all
+	JtCartItem.destroy_all
 end
 
 

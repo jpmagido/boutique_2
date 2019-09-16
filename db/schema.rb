@@ -42,15 +42,21 @@ ActiveRecord::Schema.define(version: 2019_08_16_162027) do
 
   create_table "jt_order_items", force: :cascade do |t|
     t.bigint "order_id"
-    t.bigint "item_id"
+    t.bigint "jt_cart_items_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["item_id"], name: "index_jt_order_items_on_item_id"
+    t.index ["jt_cart_items_id"], name: "index_jt_order_items_on_jt_cart_items_id"
     t.index ["order_id"], name: "index_jt_order_items_on_order_id"
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "price"
+    t.integer "total_price"
+    t.string "adress"
+    t.string "zip_code"
+    t.string "country"
+    t.string "first_name"
+    t.string "last_name"
+    t.string "company_name"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
