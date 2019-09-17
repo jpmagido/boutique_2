@@ -1,5 +1,13 @@
 class OrdersController < ApplicationController
 
+	def new
+		@new_order = Order.new
+	end
+
+	def create
+		@new_order.create(total_price: params[:total_price], adress: params[:adress], zip_code: params[:zip_code], country: params[:country], first_name: params[:first_name], last_name: params[:last_name], company_name: params[:company_name], user_id: current_user.id)
+	end
+
 	def show
 
 	  	@jt_id = JtCartItem.where(cart_id: Cart.find_by(user_id: current_user.id)).ids
