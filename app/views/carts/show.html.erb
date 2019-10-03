@@ -73,12 +73,20 @@
           <div class="col-md-6">
             <div class="row mb-5">
               <div class="col-md-6 mb-3 mb-md-0">
-                <button class="btn btn-primary btn-sm btn-block"><%= link_to "Mettre à jour le panier" , carts_path(Cart.find_by(user_id: current_user.id).id), :class => "btn btn-primary btn-sm btn-block"%></button>
+                <button class="btn btn-primary btn-sm btn-block"><%= link_to "Mettre à jour le panier" , carts_path(@current_cart), :class => "btn btn-primary btn-sm btn-block"%></button>
               </div>
               <div class="col-md-6">
                 <button class="btn btn-outline-primary btn-sm btn-block"><%= link_to "Continuer mes achats" , items_index_path%></button>
               </div>
+            
             </div>
+            
+              <% if @item_in_cart_exist != nil %>
+               
+                <button class="btn btn-outline-danger btn-sm btn-block"><%= link_to "Vider le panier" , cart_path(@current_cart_items), method: :delete %></button>
+               <% end %>
+
+            <br>
             <div class="row">
               <div class="col-md-12">
                 <label class="text-black h4" for="coupon">Coupon</label>

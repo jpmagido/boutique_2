@@ -1,5 +1,6 @@
 class JtCartItemsController < ApplicationController
 
+	
 	def create
 
 		JtCartItem.create(cart_id: Cart.find_by(user_id: current_user.id).id, item_id: params[:format])		

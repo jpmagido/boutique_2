@@ -18,4 +18,16 @@ module CartHelper
 		total_price * 1.2
 		
 	end
+
+	def delete_all_my_cart
+		@current_cart_items = JtCartItem.where(cart_id: Cart.find_by(user_id: current_user.id).id).ids
+		l = @current_cart_items.length
+		a = 0
+		while a < l
+
+			JtCartItem.find(@current_cart_items[a]).destroy
+			a += 1
+		end
+
+	end
 end

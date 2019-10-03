@@ -44,32 +44,12 @@
               </ul>
             </nav>
           </div>
-          <div class="btn-group">
-            <div class="fas fa-user-tag fas fa-sort-down"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             
-            </div>
-            <div class="dropdown-menu">
-              <% if user_signed_in? %>
-                <a class="dropdown-item" href="#"><%= current_user.email%></a>
-                
-                <%= link_to "Mon Profil", static_pages_secret_path, :class => "dropdown-item" %>
-                <%= link_to "Me déconnecter", destroy_user_session_path, method: :delete, :class => "dropdown-item" %>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              <% else %>
-                <%= link_to "Me connecter", new_user_session_path, :class => "dropdown-item" %>
-                <%= link_to "Créer un compte", new_user_registration_path, :class => "dropdown-item" %>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              <% end %>
-            </div>
-          </div>
+          
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
                 <li class="has-children active">
-                  <a href=""><i class="fas fa-user-tag"></i></a><i class="fas fa-sort-down"></i>
+                  <a href=""><i class="fas fa-user-tag"></i></a>
                   
                   <% if user_signed_in? %>
                   <ul class="dropdown">
