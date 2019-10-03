@@ -8,7 +8,6 @@ gem 'faker', '>= 1.9.1', '< 2.1.0'
 gem 'better_errors', '~> 2.5.1'
 gem 'devise', '~> 4.7.1'
 gem 'stripe', '~> 5.1.1'
-gem 'binding_of_caller'
 
 
 
