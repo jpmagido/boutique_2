@@ -1,4 +1,4 @@
-<div class="site-navbar bg-white py-2">
+<div class="site-navbar bg-white py-2 fixed-top">
 
       <div class="search-wrap">
         <div class="container">
@@ -56,8 +56,9 @@
                     <li><a href="#"><%= current_user.email%></a></li>
                     <div class="dropdown-divider"></div>
                     <li><%= link_to "Mon Profil", static_pages_secret_path, :class => "dropdown-item" %></li>
+                    <li><%= link_to "Mon panier", cart_path(Cart.find_by(user_id: current_user.id).id) %></li>
                     <li><%= link_to "Me déconnecter", destroy_user_session_path, method: :delete %></li>
-                    <li><a href="#">Menu Three</a></li>
+                    
                   </ul>
                   <% else %>
                     <ul class="dropdown">
