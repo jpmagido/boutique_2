@@ -30,4 +30,16 @@ module CartHelper
 		end
 
 	end
+
+	def count_item(input)
+		
+		var1 = JtCartItem.where(item_id: input, cart_id: Cart.find_by(user_id: current_user.id).id).ids
+		return var1.length
+	end
+
+	def count_array
+
+		var2 = JtCartItem.where(item_id: Item.find(@jt_item_id[@array_length][:item_id]).id, cart_id: Cart.find_by(user_id: current_user.id).id).ids.length
+		return var2
+	end
 end

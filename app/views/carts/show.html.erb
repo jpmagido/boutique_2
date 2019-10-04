@@ -34,7 +34,7 @@
                   <tr>
                   	<% while @array_length >= 0 %>
                     <td class="product-thumbnail">
-						
+						          
                     	<%= image_tag ("#{Item.find(@jt_item_id[@array_length][:item_id]).image_url}.jpg"), :alt => "Image", :class => "img-fluid" %>
                       
                     </td>
@@ -43,6 +43,7 @@
                     </td>
                     <td><%= Item.find(@jt_item_id[@array_length][:item_id]).price %>€</td>
                     <td>
+                      <%= count_item(Item.find(@jt_item_id[@array_length][:item_id]).id) %>
                       <%= link_to "+1", jt_cart_items_path(Item.find(@jt_item_id[@array_length][:item_id])), method: :create, :class => "buy-now btn btn-sm height-auto px-4 py-3 btn-primary"%>
                     </td>
                     <td><%= Item.find(@jt_item_id[@array_length][:item_id]).price %>€</td>

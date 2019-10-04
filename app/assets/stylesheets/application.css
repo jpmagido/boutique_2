@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  *= require icomoon-free/style
- *= require icomoon-essencial/style
  *= require assets/stylesheets/bootstrap.min.css
  *= require assets/stylesheets/magnific-popup.css
  *= require assets/stylesheets/jquery-ui.css
