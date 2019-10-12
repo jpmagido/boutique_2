@@ -9,6 +9,7 @@ gem 'better_errors', '~> 2.5.1'
 gem 'devise', '~> 4.7.1'
 gem 'stripe', '~> 5.1.1'
 gem 'icomoon-rails'
+gem 'sendgrid-ruby'
 
 
 
